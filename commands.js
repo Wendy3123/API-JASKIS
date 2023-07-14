@@ -3,17 +3,25 @@
 
 // GETTING STARTED
 // 1. Create a database called jaskis
-
+// use jaskis
 
 // 2. Create a collection called bounties
-
+//db.createCollection('bounties')
 
 // ADD THE ANIMAL BOUNTIES
 // 1. Insert the given "Thanoceros" bounty object
-
+// db.bounties.insertOne({
+//     name: "Thanoceros",
+//     species: "Rhinoceros",
+//     location: "Grasslands",
+//     wantedFor: "Eating too much grass",
+//     client: "Songbird",
+//     reward: 10000,
+//     captured: false
+//   })
 
 // 2. Query for all bounties in the bounties collection
-
+//
 
 // 3. Insert many bounties at once using the given objects
 
@@ -22,7 +30,7 @@
 // 1. Query for all bounties in the Grasslands
 
 // 2. Query for all bounties with a reward worth 10000 or more
-
+//db.bounties.find( { $or: [ { reward: { $eq: 10000 } },  { reward: { $gt: 10000 } } ] } )
 // 3. Query for all bounties, but exclude the client attribute from being shown
 
 // 4. Query for a Groundhog in the Woodlands
